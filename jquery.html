@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+    <link rel="stylesheet" href="jquery.css">
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <div class="color">
+        <!-- <h2>ADHITHYA</h2><br><br> -->
+    </div><br><br><br><br><br><br><hr>
+    <h1>CONGRATULATIONS!!!</h1>
+    <div class="pic">
+        <img src="eye.gif" alt="eye" id="eye">
+        <img src="png.png" alt="png" id="png">
+        <button>click to see effects</button>
+    </div>
+    <script>
+        $("document").ready(function()
+        {
+            $("button").click(function()
+            {
+                    $("h1").hide(500);
+                    var f=$(".color")
+                    f.animate({left:"1820px",borderRadius:"50%"},3000);
+                    f.animate({top:"800px",borderRadius:"50%"});
+                    f.animate({top:"200px"},1000);
+                    f.animate({top:"800px"});
+                    f.animate({top:"300px"},1000);
+                    f.animate({top:"800px"},500);
+                    f.animate({top:"420px"},1000);
+                    f.animate({left:"1290px"},4000);
+                    $("h1").css("color","green").fadeIn();
+            });
+        });
+    </script>
+</body>
+</html>
